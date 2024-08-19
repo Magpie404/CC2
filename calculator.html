@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style_calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    
+     
+    
+        <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="navigate('index.html')" class="menu">
+            <div id="content"></div>  
+        <img src="img/menu.png" alt="button">
+        </button>
+        <span class="title">Rechner</span>
+    </div>
+
+
+    <div id="resultarea"></div>
+
+    <table>
+        <tr>
+            <td onclick="clearAll()" class="highlightTop">AC</td>
+            <td onclick="deleteLast()" class="highlightTop">C</td>
+            <td onclick="appendOperation(' % ')" class="highlightTop">%</td>
+            <td onclick="appendOperation(' + ')" class="highlight">+</td>
+            
+
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(7)">7</td>
+            <td onclick="appendOperation(8)">8</td>
+            <td onclick="appendOperation(9)">9</td>
+            <td onclick="appendOperation(' - ')" class="highlight">-</td>
+
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(4)">4</td>
+            <td onclick="appendOperation(5)">5</td>
+            <td onclick="appendOperation(6)">6</td>
+            <td onclick="appendOperation(' / ')" id="divide">&divide;</td>
+        </tr>
+        
+        <tr>
+            <td onclick="appendOperation(1)">1</td>
+            <td onclick="appendOperation(2)">2</td>
+            <td onclick="appendOperation(3)">3</td>
+            <td onclick="appendOperation(' * ')" class="highlight">x</td>
+
+        </tr>
+
+        <tr>
+            <td colspan="2" onclick="appendOperation(0)" id="zero">0</td>
+            <td onclick="appendOperation('.')">,</td>
+            <td onclick="calculateresult()" id="result">=</td>
+
+        </tr>
+    </table>
+</body>
+</html>

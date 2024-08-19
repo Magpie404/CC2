@@ -1,0 +1,133 @@
+body {
+    font-family: "Oswald", sans-serif;
+    color: #000000;
+    margin: 0;    
+    background-color: rgb(24, 32, 24);
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    background-color: none;
+    border: none;
+    margin: 0px 0;
+    padding: 0px 0;
+    cursor: pointer;
+    transition: 0.3s, transform 0.3s;
+    overflow: hidden;
+}
+
+.menu img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: none;
+}
+
+.menu:hover img {
+    content: url('img/menu_hover2.png');
+    transform: scale(1.05);
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.055);
+    width: 100%;
+    font-size: 32px;
+    font-style: oblique;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0px;
+}
+
+.title {
+    color:#dadaae;
+    font-size: 38px;
+}
+
+table {
+    table-layout: fixed;
+    width:  100%;
+    height: 65vh;
+    background-color: rgb(24, 32, 24);
+    color: #FFFFD9;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+
+}
+td {
+    height: 50px;
+    width: 25%;
+    overflow: hidden;
+    background-color: rgb(30, 40, 30);
+    text-align: center;
+    font-size: 24px;
+    border-radius: 100%;
+    
+
+}
+
+td:hover {
+    background-color: rgb(49, 65, 49);
+    cursor: pointer;
+}
+
+#resultarea {
+    height: 23vh;
+    background-color:#FFFFD9;
+    font-size: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 24px;
+    box-sizing: border-box;
+    border: rgb(24, 32, 24);
+    border-radius: 20px;
+    width: 95%;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+
+#result {
+    background-color:#df9c1f;
+    color: #000000;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#result:hover {
+    background-color: #314131;
+}
+
+.highlightTop {
+    background-color: #dadaae;
+    color: black;
+}
+
+.highlight {
+    background-color: #df9c1f;
+    color: black;
+}
+
+#divide {
+    background-color: #df9c1f;
+    color: #000000;
+    font-size: 34px;
+}
+
+#divide:hover {
+    background-color: rgb(49, 65, 49);
+    
+}
+
+#zero {
+    border-radius: 50px;
+}

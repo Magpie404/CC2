@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Währungsumrechner</title>
+    <link rel="stylesheet" href="style_currency.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="navigate('index.html')" class="menu">
+        <img src="img/menu.png" alt="button">
+        </button>
+       <span class="title">Währungsumrechner</span> 
+    </div>
+    
+    <div class="input-containerEUR">
+        <img class="flagEu" src="img/eu.png" alt="">
+        <input id="euroField" type="text">
+        <span class="currency">EUR</span>
+
+    </div>
+
+    <div class="arrowContainer">
+        <button onclick="toggleConversion()" class="arrow">
+        <img src="img/arrow.png" alt="Button" />
+        </button>
+    </div>
+
+    <div class="input-containerUSD">
+        <img class="flagUs" src="img/usa.png" alt="">
+        <input id="usdField" type="text">
+        <span class="currency">USD</span>
+    </div>
+    
+    <div class="button-container">
+        <button onclick="calculate()" class="calculate">Berechnen</button>
+    </div>
+
+    <div id="conversion-status">Aktuelle Umrechnung: <br> EUR zu USD</div>
+
+    <div id="content"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
